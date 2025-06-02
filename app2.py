@@ -4,7 +4,7 @@ import json
 from tqdm import tqdm
 def main():   
 #/Users/mohorbanerjee/Desktop/workspace/Llama-3.1-8B-Instruct_sample=199_dp=5.json
-    with open('/Users/mohorbanerjee/Desktop/workspace/Llama-3.1-8B-Instruct_sample=199_dp=5.json','r') as file:
+    with open('/home/users/ntu/mohor001/g1vllm/Llama-3.1-8B-Instruct_sample=199_dp=5.json','r') as file:
         dataneo=file.read()
     dataneo=json.loads(dataneo)
 
