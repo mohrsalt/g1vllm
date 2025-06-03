@@ -20,7 +20,7 @@ def main():
             user_query = query
             
             if True:   
-                # Generate and display the response
+                print(idx)
                 for steps, total_thinking_time in generate_response(user_query):
                         for i, (title, content, thinking_time) in enumerate(steps):
                             # Ensure content is a string

@@ -4,8 +4,8 @@ from vllm import LLM, SamplingParams
 
 # Initialize vLLM
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"  # or your local model path
-llm = LLM(model=model_name)
-sampling_params = SamplingParams(temperature=0.2, max_tokens=300)
+llm = LLM(model=model_name,quantization="bitsandbytes",load_format="bitsandbytes")
+sampling_params = SamplingParams(temperature=0.2, max_tokens=800)
 
 def make_api_call(messages, max_tokens, is_final_answer=False, custom_llm=None):
     global llm
