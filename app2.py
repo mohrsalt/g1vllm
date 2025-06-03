@@ -10,7 +10,7 @@ def main():
 
     for idx,ij in enumerate(tqdm(dataneo)):
         
-        if(idx==2):
+        if(idx==1):
             break
         
         temp=[]
